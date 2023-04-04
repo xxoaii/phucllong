@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: auto;
+  background-color: #FAF7EE;
+}
+.containerimg {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  position: relative; 
+}
+.containerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.containerimg .content {
+  position: absolute;
+  margin: 0 5%;
+  padding-top: 8%;
+}
+.containerimg .content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(36px, 10vw, 143px);
+  letter-spacing: 0.05em;
+  color: #A0D05C;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -5px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.containerimg .content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(2px, 1.45vw, 20px);
+  line-height: 150%;
+  text-align: justify;
+  color: #FFFFFF;
+}
+.hopchat {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+.subimg {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* filter: drop-shadow(-5px 7px 0px rgba(0, 0, 0, 0.5)); */
+}
+.subimg img:nth-child(2) {
+  margin-top: 20px;
+}
+.hopchat-main {
+  width: 60%;
+  background-color: #F4F1E8;
+  border: 3px dashed black; 
+  box-shadow: -8px 8px 1px rgba(0, 0, 0, 0.5);
+  margin-left: 4%;
+}
+.circle {
+  position: relative;
+  top:-33px;
+  left: 48%;
+  background: #A0D05C;
+  border: 1px solid #000;
+  box-shadow: -4px 4px 0px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.hopchat-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -48px;
+}
+.hopchat-title .maintitle {
+  display: flex;
+  flex-direction: column;
+}
+.hopchat-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(32px, 8vw, 132px);
+  text-align: center;
+  color: #0C713D;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -6px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.hopchat-title .maintitle p:nth-child(1){
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(14px, 1.75vw, 26px);
+  padding-bottom: 5px;
+}
+.hopchat-title .maintitle p:nth-child(2){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 2.75vw, 40px);
+  letter-spacing: 0.02em;
+  color: #A0D05C;
+  text-shadow: -3px 0 0 #000;
+}
+.highlight {
+  background-image: linear-gradient(#0C713D, #0C713D, #0C713D);
+}
+.maintitle hr {
+  border: clamp(0.5px, 0.25vw, 2px) dashed #A0D05C;
+}
+.hopchat-content{
+  display: flex;
+  flex-direction: column; 
+  margin: 10px 0 10px 0;
+}
+.hopchat-content .thu{
+  display: flex;
+  margin: 2% 0 2% 6%;
+  align-items: center;
+}
+.hopchat-content .thu img{
+  margin-right: 10px;
+}
+.hopchat-content .thu p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(12px, 2vw, 26px);
+}
+.hopchat-main .aa{
+  position: relative;
+  left: 75%;
+  top: -20px;
+  margin-top: -20%;
+}
+.huongtra{
+  margin: 12% 25%;
+}
+.huongtra div{
+  width: 50%;
+  border: 2px solid #0C713D;
+  margin: auto;
+}
+.huongtra p{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 20px);
+  line-height: clamp(24px, 3vw, 40px);  
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #0C713D;
+  margin: clamp(25px, 4vw, 50px) 0;
+}
+.chontra{
+  width: 100%;
+  height: auto;
+  margin: 12% 0 8% 0;
+  background-color: rgba(160, 208, 92, 0.25);
+  border: 4px solid #000;
+}
+.chontra .chon{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.chontra .chon img{
+  margin-bottom: 20px;
+}
+.chontra .chon h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 4vw, 40px);
+  line-height: clamp(30px, 4.5vw, 49px);
+  text-align: center;
+  
+  color: #0C713D;
+  text-shadow: -4px 0px 0px #000000;
+  padding: clamp(0px, 1.5vw, 6px);
+  background-color: rgba(160, 208, 92, 0.5);
+}
+.chontra .chon hr {
+  margin: 5px auto;
+  border: 2px dashed #0C713D;
+}
+.chontra .ct{
+  display: flex;
+  margin: 3% 8%;
+}
+.chontra .ct .tra {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;    
+}
+.chontra .ct .tra img {
+  margin: 0 0 clamp(6px, 2vw, 20px) 0;
+}
+.chontra .ct .imgtra {
+  display: flex;
+  justify-content: center;
+}
+.chontra .tra h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(10px, 3vw, 20px);
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #A0D05C;
+  padding: 2% 0 0 0;
+  box-shadow: -2px 2px 0px #0C713D;
+  }
+.chontra .tra p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: clamp(14px, 2.25vw, 18px);
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  text-align: justify;
+}
+
+@media screen and (min-width:650px) and (max-width:1280px) {
+  .hopchat {
+    max-width: 95%;
+  }
+  .circle{
+    transform: scale(0.8);
+  }
+  .hopchat-title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .hopchat-content .thu img{
+    transform: scale(0.9);
+  }
+  .hopchat-main .aa{
+    transform: scale(0.85);
+    left: 65%;
+  }
+  .chontra .chon img{
+    transform: scale(0.75);
+  }
+  .chontra .chon h2{
+    text-shadow: -3px 0px 0px #000000;
+  }
+  .chontra .ct{
+    flex-direction: column;
+  }
+  .chontra .ct .tra{ 
+    flex-direction: row;
+    align-items: center;
+  }
+  .chontra .tra h3{
+    position: relative;
+    top: -65px;
+    left: 30px;
+    min-width: 280px;
+    padding: 5px 0 5px 0;
+  }
+  .chontra .ct .tra p{
+    position: relative;
+    left: -250px;
+    top: 20px;
+    min-width: 58%;
+  }
+}
+@media screen and (max-width:650px) {
+  .hopchat {
+    flex-wrap: wrap-reverse;
+  }
+  .circle{
+    transform: scale(0.5);
+    left: 45%;
+  }
+  .hopchat-main {
+    width: 100%;
+    margin: auto;
+  }
+  .subimg {
+    width: 100%;
+    transform: scaley(0.85);
+  }
+  .subimg img:nth-child(2) {
+    display: none;
+  }
+  .hopchat-title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .hopchat-title .maintitle p:nth-child(2){
+    text-shadow: -2px 0 0 #000;
+  }
+  .maintitle hr{
+    border: 1px dashed #A0D05C;
+  }
+  .hopchat-content .thu {
+    margin: 0 0 0 6%;
+  }
+  .hopchat-content .thu img{
+    transform: scale(0.55);
+    margin-right: 5px;
+  }
+  .hopchat-main .aa{
+    transform: scale(0.6);
+    left: 65%;
+  }
+  .chontra .chon img{
+    transform: scale(0.5);
+  }
+  .chontra .chon h2{
+    text-shadow: -3px 0px 0px #000000;
+  }
+  .chontra .ct{
+    flex-direction: column;
+  }
+  .chontra .ct .tra .imgtra {
+    transform: scale(0.85);
+  }
+  .chontra .ct .tra h3{
+    padding: 3px 0 2px 0;
+  }
+}

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+body{
+  background-color: #FAF7EE;
+}
+.slide {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+  position: relative; 
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.slide .slide-content {
+  position: absolute;
+  margin: 0 5%;
+  padding-top: 14%;
+}
+.slide .slide-content .slide-title{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: clamp(32px, 6vw, 96px);
+  color: #0C713D;
+  text-shadow: -4px 0px 0px #000000;
+}
+.slide .slide-content .slide-subtitle{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 300;
+  font-size: clamp(4px, 1.45vw, 20px);
+  line-height: clamp(8px, 2vw, 30px);
+  text-align: justify;
+  color: #0C713D;
+  margin-right: 48%;
+}
+
+.section3 {
+  width: 100%;
+  /* background: #E3EDC9; */
+  margin: auto;
+}
+/* navigate phan loai */
+.section3 section {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.section3 section .nav-content{
+  display: flex;
+  justify-content: center;
+}
+.section3 section .icon-box {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+  z-index: 1;
+}
+.section3 section .thucuong{
+  background-color: #a0D05C;
+  padding: 10px 10px 0 0;
+}
+.section3 section .thucuong h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2.5vw, 30px);
+  color: #0C713D;
+  text-shadow: 2px 0px 0px #000; 
+}
+.section3 section .anvat h2, .banh h2, .donggoi h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(12px, 2.25vw, 26px);
+}
+.section3 .icon-box img{
+  margin: auto 5px;
+  /* transform: scale(0.95); */
+}
+.section3 hr {
+  margin: auto;
+  width: 85%;
+  border: none;
+  border-top: 3px dashed #000;
+}
+
+.main-content{
+  display: flex;
+}
+.main-content section {
+  flex: 28%;
+  margin-top: 11%;
+}
+.filterdrink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drink-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(12px, 3.25vw, 36px);
+  color: #0C713D;
+  text-shadow: -3px 0px 0px #000;
+  margin-bottom: 40px;
+}
+.filterdrink-contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+}
+.filterdrink-content{
+  display: flex;
+  align-items: center;
+  border: 1.5px dashed #000;
+  width: clamp(150px, 18vw, 272.25px);
+  height: 44px;
+  border-radius: 28px;
+  padding-left: 2px;
+}
+.filterdrink-content .filter-content{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: clamp(10px, 1.6vw, 14px);
+}
+section hr {
+display: none;
+}
+main{
+  flex: 72%;
+  margin: 8% 0;
+  justify-content: center;
+}
+.drink-products{
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: clamp(32px, 6vw, 50px);
+  row-gap:clamp(32px, 5vw, 54px);
+}
+.drink-item{
+  width: clamp(180px, 24vw, 217px);
+  height: clamp(300px, 28vw, 320px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  text-align: center;
+  border: 1px solid #E1EDD0;
+  border-radius: 108px;
+}
+.drink-product:hover .drink-item{
+  background-color: #a0D05C;
+}
+.item-image{
+  margin-top: 10%;
+}
+.item-name{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: clamp(16px, 1.75vw, 18px);
+  letter-spacing: 0.05em;
+  color: #0C713D;
+}
+.price{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.75vw, 18px);
+}
+.xemthem{
+  margin: 100px auto;
+  width: 147px;
+  height: 49px;
+  background: #0C713D;
+  border: 2px dashed #A0D05C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+.products-details{
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.products-details .preview{
+  display: none;
+  background-image: url('images/Rectangle 530.svg');
+  max-width: 70%;  
+  padding: clamp(12px, 3vw, 50px);
+}
+.products-details .preview.active{
+  display: inline-flex;
+}
+.products-details .preview .image-box{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+}
+.products-details .preview .image-box img{
+  height: clamp(120px, 24vw, 340px);
+}
+.products-details .preview .image-box .subimg{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(6px, 1vw, 12px);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.products-details .preview .main-details{
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(8px, 2vw, 25px);
+  margin-left: clamp(12px, 4vw, 30px);
+}
+.products-details .preview .main-details .con-2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(12px, 2.5vw, 32px);
+  color: #0C713D;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.products-details .preview .main-details .con-2 img{
+  height: clamp(10px, 4vw, 50px);
+}
+.products-details .preview .main-details .con-3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(10px, 2vw, 22px);
+}
+.products-details .preview .main-details .con-4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: clamp(8px, 1.5vw, 18px);
+  line-height: clamp(10px, 2.25vw, 28px);
+  text-align: justify;
+}
+.products-details .preview .main-details .con-5{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(10px, 2vw, 24px);
+  letter-spacing: 0.05em;
+}
+.products-details .preview .fa-times{
+  font-size: clamp(14px, 2vw, 28px);
+  align-self: self-start;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+@media screen and (min-width:650px) and (max-width:1240px){
+  .section3 .icon-box img{
+    transform: scale(0.85);
+  }
+  .filterdrink-icon{
+    transform: scale(0.85);
+  }
+  .item-image{
+    transform: scale(0.85);
+  }
+  .drink-products{
+    justify-content: center;
+  }
+}
+@media screen and (max-width:650px){
+  .section3 section {
+    width: 80%;
+    flex-direction: column;
+  }
+  .section3 hr {
+    width: 80%;
+  }
+  .section3 .icon-box img{
+    transform: scale(0.65);
+  }
+  .main-content{
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+  main{
+    width: 100%;
+  }
+  .drink-title {
+    display: none;
+  }
+  .filterdrink-icon{
+    transform: scale(0.75);
+  }
+  .filterdrink-contents{
+    margin: auto 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+  }
+  .filterdrink-content{
+    width: 130px;
+    height: 40px;
+  }
+  section hr {
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    border-top: 2px dashed #000;
+  }
+  .item-image{
+    transform: scale(0.75);
+  }
+  .drink-products{
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+

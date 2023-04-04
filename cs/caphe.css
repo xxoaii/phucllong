@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat','Quicksand', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #FAF7EE;
+}
+
+
+/* Ảnh cover + chữ */
+.containerimg {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  position: relative; 
+}
+.containerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.containerimg .content {
+  position: absolute;
+  margin: 0 5% 0 5%;
+  padding-top: 8%;
+}
+.containerimg .content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(36px, 10vw, 143px);
+  letter-spacing: 0.05em;
+  color: #A0D05C;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -5px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.containerimg .content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(2px, 1.45vw, 20px);
+  text-align: justify;
+  color: #FFFFFF;
+}
+.section1 {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+.tieuchi-main {
+  width: 60%;
+  background-color: #F4F1E8;
+  border: 3px dashed black; 
+  box-shadow: -8px 8px 1px rgba(0, 0, 0, 0.5);
+  margin-right: 4%;
+}
+.circle {
+  position: relative;
+  top:-33px;
+  left: 48%;
+  background: #0C713D;
+  border: 1px solid #000;
+  box-shadow: -4px 4px 0px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.tieuchi-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -48px;
+}
+.tieuchi-title .maintitle {
+  display: flex;
+  flex-direction: column;
+}
+.tieuchi-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(32px, 8vw, 132px);
+  text-align: center;
+  color: #A0D05C;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -6px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.tieuchi-title .maintitle p:nth-child(1){
+  font-size: clamp(12px, 2vw, 32px);
+}
+.tieuchi-title .maintitle p:nth-child(2){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 2.75vw, 40px);
+  letter-spacing: 0.01em;
+  color: #0C713D;
+  text-shadow: -3px 0 0 #000;
+}
+.highlight {
+  background-image: linear-gradient(#A0D05C, #A0D05C, #A0D05C);
+}
+.maintitle hr {
+  border: clamp(0.5px, 0.25vw, 2px) dashed #0C713D;
+}
+.tieuchi-content{
+  display: flex;
+  flex-direction: column; 
+  margin: 10px 0 10px 0;
+}
+.tieuchi-content .thu{
+  display: flex;
+  margin: 2% 0 3% 6%;
+  justify-items: center;
+}
+.tieuchi-content .thu img{
+  margin-right: 10px;
+}
+.tieuchi-content .thu p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(12px, 2vw, 26px);
+}
+.subimg {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  filter: drop-shadow(-5px 7px 0px rgba(0, 0, 0, 0.5));
+}
+.subimg img:nth-child(2) {
+  margin-top: 20px;
+}
+.section2 {
+  width: 80%;
+  background-color: #0C713D;
+  margin: auto;
+  margin-bottom: 8%;
+  border-radius: 30px;
+  border: 4px solid #000;
+}
+.section2 p {
+  padding: 3% 7% 3% 7%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(10px, 2.5vw, 24px);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section3 {
+  width: 100%;
+  margin-bottom: 8%;
+  padding: 2% 0 1% 0;
+  border: 4px solid #000;
+  background: #E3EDC9;
+}
+/* navigate phan loai */
+.section3 section {
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+  max-width: 90%;
+}
+.section3 label {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  color: #0C713D;
+  z-index: 1;
+}
+.section3 .manhme, .tinhte, .cpmui {
+  font-size: clamp(12px, 3.25vw, 32px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-shadow: -3px 0 0 #000;
+  transition: 0.1s ease-in-out;
+}
+#manhme:hover ~ section .manhme,
+#tinhte:hover ~ section .tinhte,
+#cpmui:hover ~ section .cpmui {
+  background: linear-gradient(180deg, rgba(160, 208, 92, 0.5) 27.5%, rgba(160, 208, 92, 0) 100%);
+}
+#tinhte:checked ~ section .tinhte,
+#cpmui:checked ~ section .cpmui,
+#manhme:checked ~ section .manhme {
+  background: rgba(160, 208, 92, 0.5);
+  /* padding: 0 10px; */
+}
+input[type="radio"]{
+  display: none;
+}
+.section3 hr {
+  margin: auto;
+  margin-top: 8px;
+  width: 80%;
+  border: none;
+  border-top: 3px dashed #000;
+}
+/* noi dung tung tab phan loai */
+article .content{
+  display: none;
+}
+#manhme:checked ~ article .content-1,
+#tinhte:checked ~ article .content-2,
+#cpmui:checked ~ article .content-3 {
+  display: flex;
+}
+.container, .container2 {
+  max-width: 88%;
+  width: 100%;
+  padding: 2% 0 0 0;
+}
+.slide-container, .slide-container2 {
+  margin: 0 50px;
+  overflow: hidden;
+}
+.card .image-box {
+  height: 220px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .content-details {
+  display: flex;
+  text-align: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.content-details h3 {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: clamp(10px, 3vw, 22px);
+  font-weight: 600;
+  background-color: #A0D05C;
+  padding: 1% 0 1% 0;
+  box-shadow: -2px 2px 0px #0C713D;
+}
+.content-details p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: clamp(6px, 2.5vw, 18px);
+  font-weight: 400;
+  margin: 20px 0 0 0;
+}
+.swiper-navBtn {
+  color: #A0D05C;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.swp-btn3{
+  display: flex;
+}
+.swp-btn2, .swp-btn1 {
+  display: none;
+}
+
+@media screen and (max-width:1240px) {
+  .swp-btn2, .swp-btn1 {
+    display: flex;
+  }
+}
+@media screen and (max-width:650px) {
+  .section1 {
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+  }
+  .circle{
+    transform: scale(0.5);
+    left: 45%;
+  }
+  .tieuchi-main {
+    width: 100%;
+    margin: auto;
+  }
+  .tieuchi-title {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tieuchi-title .maintitle p:nth-child(1){
+    text-align: center;
+  }
+  .tieuchi-title .maintitle p:nth-child(2){
+    text-shadow: -1px 0 0 #000;
+  } 
+  .tieuchi-content .thu{
+    margin: 2% 1% 0 6%;
+  }
+  .tieuchi-content .thu img{
+    transform: scale(0.75);
+    margin-right: 5px;
+  }
+  .subimg {
+    width: 100%;
+    transform: scaley(0.85);
+  }
+  .subimg img:nth-child(2) {
+    height: 0;
+    display: none;
+  }
+  .section2 {
+    border: 2px solid #000;
+  }
+  .section3 section {
+    max-width: 100%;
+  }
+  .section3 .manhme, .tinhte, .cpmui {
+    text-shadow: -1px 0 0 #000;
+  }
+  .card .image-box {
+    height: 160px;
+  }
+  .swiper-navBtn {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (min-width:650px) and (max-width:1240px) {
+  .circle{
+    transform: scale(0.8);
+  }
+  .tieuchi-title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .tieuchi-content .thu{
+    margin: 2% 1% 0 10%;
+  }
+  .section3 section{
+    max-width: 95%;
+  }
+  .section3 .manhme, .tinhte, .cpmui {
+    text-shadow: -2px 0 0 #000;
+  }
+  .card .image-box {
+    height: 180px;
+  }
+}
