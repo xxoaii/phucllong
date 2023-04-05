@@ -1,7 +1,7 @@
 
   @font-face {
     font-family: font;
-    src: url(font(1).ttf);
+    src: url(font.ttf);
   }
   *{
     margin: 0; padding: 0;
@@ -23,6 +23,7 @@
   .slide img {
   width: 100%;
   object-fit: fill;
+  margin: 35px 0px;
   }
   
   .section1{
@@ -74,13 +75,13 @@
     font-family: font;
   }
 
-  form{
+  .section1 .d1 form{
     width:70%;
     display:flex;
     flex-direction: column;
     margin: 50px auto;
   }
-.section1 .d1  .input-group {
+.section1 .d1 .input-group {
   position:relative;
   height: 53px;
 }
@@ -88,7 +89,7 @@
   position:relative;
   height: 53px;
 }
-.section1 .d1 input{
+ .section1 .d1 input{
   width:100%;
   padding:20px;
   outline:0;
@@ -99,54 +100,67 @@
   height: 53px;
 }
 #tieude{ 
-  width: clamp(260px, 38vw, 977px);
+  width: clamp(19.5rem, 38vw, 500rem);
 }
+
+
 .section1 .d1 textarea{
-  display: block;
-    width: clamp(260px, 38vw, 977px);
-    padding: 20px;
-    outline: 0;
-    border: none;
-    border-radius: 27px;
-    background: #FAF7EE;
+  width: clamp(19.5rem, 38vw, 500rem);
+  padding:20px;
+  outline:0;
+  border: 1px solid#fff;
+  border-radius: 27px;
+  background: #FAF7EE;
+  font-size: clamp(15px, 2vw, 20px);
+  height:150px ;
+}
+
+
+.section1 .d1 label{
+    height:50%;
+    position: absolute;
+    left:15px;
+    top:10px;
+    padding:3px;
+    color:#0C713D;
+    cursor:text;
     font-size: clamp(15px, 2vw, 18px);
-    height: 150px;
+    transition: top .3s;
+    pointer-events: none;
 }
-label{
-  position: absolute;
-  left: 15px;
-  top: 10px;
-  padding: 3px;
-  color:#0C713D;
-  cursor: text;
-  font-size: clamp(15px, 2vw, 18px);
-  transition: top .3s;
-  pointer-events: none;
-}
-select{
-  width: 100%;
-  padding: 15px;
-  outline: 0;
-  border: none;
+
+.section1 .d1 select{
+  width:100%;
+  padding:15px;
+  outline:0;
+  border: 1px solid#fff;
   border-radius: 27px;
   background: #FAF7EE;
   font-size: clamp(15px, 2vw, 18px);
   height: 53px;  
-  color: #0C713D;
+ color: #0C713D;
 }
 
-input:focus ~ label,  input:valid ~ label{
+.section1 .d1 input:focus ~ label,  .section1 .d1 input:valid ~ label{
+    top:-3px;
+    left:20px;
+    font-size: 16px;
+    background-color:transparent;
+   
+}
+
+.section1 .d1 textarea:focus ~ label{
   top:-3px;
   left:20px;
   font-size: 16px;
   background-color:transparent;
+ 
 }
-
-textarea:focus ~ label{
+.section1 .d1 textarea:valid ~ label{
   top:-3px;
   left:20px;
   font-size: 16px;
-  background-color:transparent;
+  background-color:transparent;  
 }
 .row2{
   display:flex;
@@ -176,7 +190,7 @@ textarea:focus ~ label{
 }
 .section1 .d1 .t{
   font-weight: 400;
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: clamp(17px, 2vw, 20px);
   color: #0C713D;
 }
 

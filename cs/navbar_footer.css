@@ -134,7 +134,7 @@ list-style: none;
 .footer-co ul li a:hover{
   font-weight: 600;
 }
-form{
+.footer-col form{
   min-width: 269px;
   position:relative;
   display: flex;
@@ -142,7 +142,7 @@ form{
   align-items: flex-start;
   margin-top: 15px;
 }
-form input{
+.footer-col form input{
   height:44px;
   min-width: 269px;
   border: 1px solid #000;

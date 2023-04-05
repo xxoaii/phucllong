@@ -1,89 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <meta charset="UTF-8">
+    <title>Phúc Long</title>	
+    <link rel="stylesheet" href="cs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="cs/trangchu.css">
+    <link rel="stylesheet" href="cs/navbar_footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="logo1.svg" alt=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="trangchu.html">TRANG CHỦ</a></li>
+          <li><a href="cauchuyen.html">CÂU CHUYỆN</a></li>
+          <li>
+            <a href="tracaphechung.html">TRÀ & CÀ PHÊ</a>
+            <i class='bx bxs-chevron-down tracaphe-arrow arrow'></i>
+            <ul class="tracaphe-sub-menu sub-menu">
+              <li><a href="tra.html">TRÀ</a></li>
+              <li><a href="caphe.html">CÀ PHÊ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="sanpham.html">SẢN PHẨM</a>
+            <i class='bx bxs-chevron-down sp-arrow arrow'></i>
+            <ul class="sp-sub-menu sub-menu">
+              <li><a href="#">THỨC UỐNG</a></li>
+              <li><a href="#">ĂN VẶT</a></li>
+              <li><a href="#">BÁNH</a></li>
+              <li><a href="#">ĐÓNG GÓI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BẢNG TIN</a>
+            <i class='bx bxs-chevron-down bangtin-arrow arrow'></i>
+            <ul class="bangtin-sub-menu sub-menu">
+              <li><a href="https://phuclong.com.vn/khuyen-mai">TIN TỨC</a></li>
+              <li><a href="https://phuclong.com.vn/tuyen-dung">TUYỂN DỤNG</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.google.com/maps/search/Phuc+Long+Coffee+%26+Tea/@21.0254344,105.8328211,13.6z?hl=vi">CỬA HÀNG</a></li>
+          <li><a href="lhe2.html">LIÊN HỆ</a></li>
+        </ul>
+      </div>
+      <div class="order-button">
+        <a href="https://order.phuclong.com.vn/">ĐẶT HÀNG</a>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </nav>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <div class="container">
+    <div class="image">
+      <img src="images\ads 02.svg" alt="">
+    </div>
+    <div class="image">
+      <img src="images\ads 01.svg" alt="">
+    </div>
+    <div class="image">
+      <img src="images\ads 03.svg" alt="">
+    </div>
+    <div class="button">
+      <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+      <a onclick="nextimg(1)" class="next">&#10095;</a>
+    </div>
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <div class="info">
+    <div class="info-content">
+      <div class="info-title">
+        <img src="images\image 100.svg" alt="">
+        <h2>từ những <span class="m2"> MẦM TRÀ</span>,</h1> 
+        <h1>CHÚNG TÔI tạo ra <span class="m1">NIỀM ĐAM MÊ</span></h1>
+      </div>
+      <p>Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng cùng mong muốn mang lại cho khách hàng trải nghiệm giá trị nhất khi thưởng thức, Phúc Long liên tục là thương hiệu tiên phong với nhiều ý tưởng sáng tạo đi đầu trong ngành trà và cà phê.</p>
+      <a href="#" class="button-moreinfo">
+        <p>TÌM HIỂU THÊM</p>
+        <p>&#10230</p>
+      </a>
+    </div>
+    <div class="info-subimg">
+      <div class="subimg1"><img src="images\imginfo-01.svg" alt=""></div>
+      <div class="subimg2"><img src="images\imginfo-02.svg" alt=""></div>
+      <div class="subimg3"><img src="images\imginfo-03.svg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="tracaphe">
+    <div class="tracaphe-title">
+      <div class="line"></div>
+      <h2>tinh túy từ những lá trà và hạt cà phê thơm ngon, hảo hạng!</h2>
+      <div class="line"></div>
+    </div>
+    <div class="tracaphe-content">
+      <div class="content">
+        <img src="images\Group 252278.svg" alt="">
+        <div class="content-details">
+          <!-- <img src="images\image 89.svg" alt="" style="width: 40px; height: 40px;"> -->
+          <h3>trà</h3>
+          <p>Trà Phúc Long có nguồn gốc tinh khiết từ hai đồi chè do chúng tôi sở hữu tại Thái Nguyên và Bảo Lộc. Để giữ gìn độ tươi nguyên, chúng tôi đã xây dựng nhà máy tại hai đồi chè, đảm bảo trà được sấy khô ngay sau khi thu hoạch.</p>
+          <a href="#" class="button-tc">TÌM HIỂU THÊM</a>
+        </div>
+      </div>
+      <div class="content">
+        <img src="images\Group 252279.svg" alt="">
+          <div class="content-details">
+            <h3>cà phê</h3>
+            <!-- <img src="images\image 90.svg" alt="" style="width: 40px; height: 40px;"> -->
+            <p>Nguồn gốc tinh khiết là yếu tố quan trọng để giữ gìn hương vị đậm đà của cà phê và hầu hết các công đoạn trong quy trình sản xuất đều được  thực hiện thủ công. Tất cả được tuân thủ nghiêm ngặt đòi hỏi sự hoàn hảo từ bước khởi đầu.</p>
+            <a href="#" class="button-tc">TÌM HIỂU THÊM</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="noibat">
+    <div class="noibat-title">
+      <div class="noibat-maintitle">Sản phẩm <span class="n2">NỔI BẬT</span><img src="images\Group 252285.svg" alt=""></div>
+      <span class="noibat-subtitle">Chọn thức uống bạn yêu thích!</span> 
+    </div>
+    <div class="products">
+			<div class="container swiper">
+			  <div class="slide-container">
+				<div class="card-wrapper swiper-wrapper">
+				  <div class="product swiper-slide">
+					  <div class="face">
+					    <div class="image-box">
+					      <img src="images\nb-01.svg">
+					    </div>
+					    <div class="product-details">
+					      <h2 class="product-name">Hoa Tuyết Berry Berry</h2>
+            		<p>70.000đ</p>
+            		<a href="#chitiet"><i class="fa fa-plus"></i></a>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="product swiper-slide" data-name="p-2">
+					  <div class="face">
+					    <div class="image-box">
+					      <img src="images\nb-02.svg">
+					    </div>
+					    <div class="product-details">
+					      <h2 class="product-name">Trà Sữa Berry Berry</h2>
+            		<p>65.000đ</p>
+            		<a href="#chitiet"><i class="fa fa-plus"></i></a>
+					    </div>
+					  </div>
+				  </div>
+          <div class="product swiper-slide" data-name="p-3">
+					  <div class="face">
+					    <div class="image-box">
+					      <img src="images\nb-03.svg">
+					    </div>
+					    <div class="product-details">
+					      <h2 class="product-name">Trà Lài Kem Tuyết</h2>
+            		<p>70.000đ</p>
+            		<a href="#chitiet"><i class="fa fa-plus"></i></a>
+					    </div>
+					  </div>
+				  </div>
+          <div class="product swiper-slide">
+					  <div class="face">
+					    <div class="image-box">
+					      <img src="images\nb-04.svg">
+					    </div>
+					    <div class="product-details">
+					      <h2 class="product-name">Trà Đào Đá xay</h2>
+            		<p>70.000đ</p>
+            		<a href="#chitiet"><i class="fa fa-plus"></i></a>
+					    </div>
+					  </div>
+				  </div>
+          <div class="product swiper-slide">
+					  <div class="face">
+					    <div class="image-box">
+					      <img src="images\nb-06.svg">
+					    </div>
+					    <div class="product-details">
+					      <h2 class="product-name">Trà Sữa Phúc Long</h2>
+            		<p>45.000đ</p>
+            		<a href="#chitiet"><i class="fa fa-plus"></i></a>
+					    </div>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="swiper-button-next swiper-navBtn swp-btn1"></div>
+			  <div class="swiper-button-prev swiper-navBtn swp-btn1"></div>
+			</div>
+		</div>
+  </div>
+
+    <div class="products-details">
+      <div class="preview" data-target="p-2">
+        <div class="image-box">
+          <img src="images\nb-02.svg" alt="">
+          <div class="subimg">* Hình ảnh mang tính chất minh họa</div>
+        </div>
+        <div class="main-details">
+          <div class="con-2">Trà Sữa Berry Berry<img src="images/image 169.svg" alt=""></div>
+          <div class="con-3">Thông tin sản phẩm</div>
+          <p class="con-4">Trà sữa Ô Long thơm ngon - đậm vị với nền trà được chiết xuất bằng phương pháp "dầm trà" thủ công truyền thống kết hợp với topping đác dâu dẻo dẻo, thơm thơm lần đầu tiên có mặt ở Phúc Long.</p>
+          <div class="con-5">Giá:&emsp;&emsp;70.000đ</div>
+        </div>
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="preview" data-target="p-3">
+        <div class="image-box">
+            <img src="images\Group 252280 (1).svg" alt="">
+            <div class="subimg">* Hình ảnh mang tính chất minh họa</div>
+        </div>
+        <div class="main-details">
+            <div class="con-2">Trà Lài Kem Tuyết<img src="images/image 169.svg" alt=""></div>
+            <div class="con-3">Thông tin sản phẩm</div>
+            <p class="con-4">Gói trọn dư âm nhiệt đới của mùa hè trong lớp kem tuyết thơm mùi dừa và vị ngọt béo của sữa, Trà Lài Kem Tuyết là thức uống chào thu tươi mới với hậu vị thơm mùi lá dứa và hoa lài nhẹ nhàng, lắng đọng sau mỗi ngụm trà.</p>
+            <div class="con-5">Giá:&emsp;&emsp;70.000đ</div>
+        </div>
+        <i class="fas fa-times"></i>
+      </div> 
+    </div>
+
+  <div class="thucdon">
+    <img src="images\Group 10.svg" alt="" class="td1">
+    <div class="tab">
+      <input type="radio" name="slider" checked id="tab1">
+      <input type="radio" name="slider" id="tab2">
+      <input type="radio" name="slider" id="tab3">
+      <input type="radio" name="slider" id="tab4">
+      <input type="radio" name="slider" id="tab5">
+      <input type="radio" name="slider" id="tab6">
+      <section class="n1">
+          <label for="tab1" class="tab1">Phúc Long Signature</label>
+          <label for="tab2" class="tab2">Special Tea</label>
+          <label for="tab3" class="tab3">Signature Coffee</label>
+          <label for="tab4" class="tab4">Fresh Squeezed Fruit Juice</label> 
+          <label for="tab5" class="tab5">Relaxing Fruit Smoothie</label>
+          <label for="tab6" class="tab6">Cool Blended Beverage</label>
+      </section>
+      <section>
+        <hr>
+        <div class="tabcontent tabcontent-1">
+          <div class="title">Phúc Long Signature</div>
+          <p >Thức uống mang tính đặc trưng của Phúc Long với vị trà đậm đà, mùi thơm dịu nhẹ, hương vị có chút chát chát đặc trưng của lá trà tươi kết hợp với trái cây hoặc sữa.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <div class="tabcontent tabcontent-2">
+          <div class="title">Special Tea</div>
+          <p>Những ly trà đặc biệt tạo ra từ những búp trà ngon nhất, được chọn lọc và chế biến cẩn thận mang đến vị chát đậm, hương thơm đặc trưng rất thích hợp cho ai muốn lấy lại sự tỉnh táo thay cho cà phê.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <div class="tabcontent tabcontent-3">
+          <div class="title">Signature coffee</div>
+          <p>Những hạt cà phê được thu hoạch và chế biến tinh chất nhất từ trang trại Phúc Long đem đến ly cà phê ngon, giúp cho mỗi người đạt được trạng thái thật sự của sự tỉnh táo khi cần làm việc hay học tập.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <div class="tabcontent tabcontent-4">
+          <div class="title">Fresh Squeezed Fruit Juice</div>
+          <p>Nước ép trái cây tại Phúc Long rất đa dạng, đều được chế biến từ những loại trái cây tươi ngon, giữ lại được toàn bộ dưỡng chất của trái cây.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <div class="tabcontent tabcontent-5">
+          <div class="title">Relaxing Fruit Smoothie</div>
+          <p>Sinh tố trái cây nhiệt đới tại Phúc Long rất đa dạng với nguyên liệu được tuyển chọn để chế biến đến từ những loại trái cây tươi ngon rất thích hợp thưởng thức cho mùa hè nắng nóng.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <div class="tabcontent tabcontent-6">
+          <div class="title">Cool Blended Beverage</div>
+          <p>Dòng thức uống với sự kết hợp giữa đá xay và trà hoặc cà phê tạo nên một món đồ uống ngon không thể cưỡng lại được.</p>
+          <div class="cc">
+            <img src="images\icon menu.svg" alt="">
+            <a href="" class="btnt" > XEM THỰC ĐƠN</a>
+          </div>
+        </div>
+        <hr>
+        <img src="images\Group 252310.svg" alt="" class="d3">
+      </section> 
+    </div>
+  </div>
+
+  <div class="tintuc">
+    <div class="t">
+      <img src="images\icon newspp.svg" alt="">
+      <div class="tintuc-title">
+        <h1>TIN TỨC</h1>
+        <a href="https://phuclong.com.vn/khuyen-mai" class="morenews">Xem thêm <span>&#10230</span></a>
+      </div>
+    </div>
+    <div class="t2"></div>
+    <div class="tin">
+      <div class="box">
+        <span class="tt">Tin tức</span>
+        <img src="images\img tt1.svg" alt="" class="anhtt">
+        <div class="tt1">
+          <p class="b1">GRAND OPENING 4 CỬA HÀNG PHÚC LONG</p> <a href="https://phuclong.com.vn/khuyen-mai/grand-opening-4-cua-hang-phuc-long"><img src="images\muiten.svg" alt=""class="t4"></a>
+          <p class="b2"><img src="images\image 56.svg" alt="" class="t5">31/12/2022 - 04/01/2023</p>
+        </div>
+      </div>
+     <div class="box">
+        <span class="tt">Tin tức</span>
+        <img src="images\img tt1 (1).svg" alt="" class="anhtt">
+        <div class="tt1">
+          <p class="b1">GRAND OPENING PHÚC LONG LÊ TRỌNG TẤN </p> <a href="https://phuclong.com.vn/khuyen-mai/grand-opening---phuc-long-le-trong-tan"><img src="images\muiten.svg" alt=""class="t4"></a>
+          <p class="b2"><img src="images\image 56.svg" alt="" class="t5">07/12/2022 - 11/12/2022</p>
+        </div>
+      </div>
+     <div class="box">
+        <span class="tt">Ưu đãi</span>
+        <img src="images\img tt3.svg" alt="" class="anhtt">
+        <div class="tt1">
+          <p class="b1">COMBO SWEET MERRY CHỈ TỪ 79.000Đ</p> <a href="https://phuclong.com.vn/khuyen-mai/combo-sweet-merry"><img src="images\muiten.svg" alt=""class="t4"></a>
+          <p class="b2"><img src="images\image 56.svg" alt="" class="t5">31/12/2022 - 04/01/2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cuahang">
+    <div class="ch-content">
+      <div class="ch-tit">
+        <span class="c1">Ghé thăm <span class="c2">CỬA HÀNG</span>
+        <img src="images\icon store.svg" alt=""><br>của chúng tôi!</span>
+      </div>
+      <div class="timduong">
+        <a href="https://www.google.com/maps/search/Phuc+Long+Coffee+%26+Tea/@21.0254344,105.8328211,13.6z?hl=vi" class="button_ch">
+          <img src="images\icon destination.svg" alt="">
+          TÌM ĐƯỜNG
+        </a>
+      </div>
+    </div>
+    <div class="ch-img">
+      <img src="images\Group 252277 (1).svg" alt="">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="truoc">
+        <div class="footer-co">
+          <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="cauchuyen.html">Câu chuyện</a></li>
+            <li><a href="tracaphechung.html">Trà & Cà phê</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="https://phuclong.com.vn/khuyen-mai">Bảng tin</a></li>
+          </ul>
+        </div>
+        <div class="footer-co">
+          <ul>
+            <li><a href="lhe2.html">Liên hệ</a></li>
+            <li><a href="https://www.google.com/maps/search/Phuc+Long+Coffee+%26+Tea/@21.0254344,105.8328211,13.6z?hl=vi">Cửa hàng</a></li>
+            <li><a href="#">Chính sách đặt hàng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li style="font-weight: 700; font-size: 16px;">LIÊN HỆ VỚI CHÚNG TÔI</li>
+            <li>marketing@phuclong.masangroup.com</li>
+            <li>1900 234 518 (Ext.9100/ 9102)</li>
+            <li>Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+          <span style="font-weight: 700; color: white;  text-transform: none; font-size: 16px;font-family:Montserrat; margin-top: 30px;">Luôn cập nhật về các tin tức và sản phẩm mới</span>
+            <form action="">
+              <input type="email" name="email" id="email" placeholder="Địa chỉ Email">
+              <div  class="btn test-completed"><a href="#" ></a></div>
+            </form>
+            <div class="social-links">
+              <a href="https://www.facebook.com/phuclongcoffeeandtea"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </ul>
+        </div>
+    </div> 
+    <div class="cuoi">© Công ty CP Phúc Long Heritage 2023</div>
+  </footer>
+</body>
+<script src="js/trangchu.js" defer></script>
+<script src="js/navbar_footer.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/firebase.js"></script>
 </html>
